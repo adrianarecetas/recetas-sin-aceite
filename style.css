@@ -57,3 +57,24 @@ p {
         padding: 15px;
     }
 }
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+section {
+    background: white;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+h1 {
+    font-family: Georgia, serif;
+}
+
+h2 {
+    color: #8b6a52;
+}
