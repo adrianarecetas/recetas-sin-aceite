@@ -4,28 +4,40 @@
     box-sizing:border-box;
 }
 
+html{
+    scroll-behavior:smooth;
+}
+
 body{
-    font-family:Arial,Helvetica,sans-serif;
-    background:#f7f4ef;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f8f5f0;
     color:#333;
 }
 
+/* ---------- CAPÇALERA ---------- */
+
 header{
-    background:linear-gradient(135deg,#f7d7c4,#f3e6d8);
+    background:linear-gradient(135deg,#fff8f3,#f7dfcf);
     text-align:center;
-    padding:70px 20px;
+    padding:90px 20px;
+    border-bottom:5px solid #d1784f;
 }
 
 header h1{
-    font-size:55px;
-    margin-bottom:15px;
+    font-size:60px;
     color:#5b3b2f;
+    margin-bottom:20px;
 }
 
 header p{
-    font-size:22px;
+    font-size:24px;
     color:#6d5246;
+    max-width:750px;
+    margin:auto;
+    line-height:1.6;
 }
+
+/* ---------- MENÚ ---------- */
 
 nav{
     background:white;
@@ -33,74 +45,140 @@ nav{
     justify-content:center;
     gap:40px;
     padding:18px;
-    box-shadow:0 3px 10px rgba(0,0,0,.08);
     position:sticky;
     top:0;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    z-index:100;
 }
 
 nav a{
     text-decoration:none;
     color:#5b3b2f;
     font-weight:bold;
+    transition:.3s;
 }
 
 nav a:hover{
     color:#d1784f;
 }
 
+/* ---------- CONTINGUT ---------- */
+
 main{
     width:90%;
     max-width:1100px;
-    margin:40px auto;
+    margin:50px auto;
 }
 
 section{
     background:white;
-    padding:35px;
     border-radius:20px;
-    margin-bottom:35px;
+    padding:40px;
+    margin-bottom:40px;
     box-shadow:0 10px 25px rgba(0,0,0,.08);
 }
 
 h2{
-    margin-bottom:20px;
     color:#8b5e3c;
+    margin-bottom:25px;
 }
 
+/* ---------- TARGETA RECEPTA ---------- */
+
 .receta{
-    border:2px solid #eee;
-    border-radius:15px;
-    padding:25px;
-    margin-top:20px;
+    background:#fffaf5;
+    border:2px solid #efd9c8;
+    border-radius:20px;
+    overflow:hidden;
+    transition:.3s;
+}
+
+.receta:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 35px rgba(0,0,0,.12);
+}
+
+.receta img{
+    width:100%;
+    height:320px;
+    object-fit:cover;
+}
+
+.receta h3{
+    padding:20px 25px 0;
+    color:#5b3b2f;
+    font-size:30px;
+}
+
+.receta p{
+    padding:0 25px;
+    margin-top:15px;
+    line-height:1.7;
 }
 
 button{
-    margin-top:20px;
+    margin:25px;
     background:#d1784f;
     color:white;
     border:none;
-    padding:12px 25px;
+    padding:15px 30px;
     border-radius:10px;
+    font-size:17px;
     cursor:pointer;
-    font-size:16px;
+    transition:.3s;
 }
 
 button:hover{
     background:#b96039;
+    transform:scale(1.05);
 }
+
+/* ---------- IMATGES ---------- */
+
+img{
+    width:100%;
+    max-width:850px;
+    display:block;
+    margin:25px auto;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+}
+
+ul,ol{
+    margin-left:30px;
+    margin-top:15px;
+    line-height:2;
+}
+
+/* ---------- TEXT ---------- */
+
+.proximamente{
+    text-align:center;
+    font-size:20px;
+    margin-top:40px;
+    color:#8b5e3c;
+}
+
+/* ---------- PEU ---------- */
 
 footer{
     background:#5b3b2f;
     color:white;
     text-align:center;
-    padding:30px;
-    margin-top:50px;
+    padding:35px;
+    margin-top:60px;
 }
+
+/* ---------- MÒBIL ---------- */
 
 @media(max-width:768px){
 
+header{
+    padding:60px 20px;
+}
+
 header h1{
-    font-size:38px;
+    font-size:40px;
 }
 
 header p{
@@ -112,45 +190,12 @@ nav{
     gap:15px;
 }
 
+.receta img{
+    height:220px;
 }
-.receta{
-    background:#fffaf6;
-    border:2px solid #efd9c8;
-    border-radius:18px;
+
+section{
     padding:25px;
-    transition:0.3s;
 }
 
-.receta:hover{
-    transform:translateY(-6px);
-    box-shadow:0 15px 35px rgba(0,0,0,.12);
-}
-
-.receta h3{
-    color:#8b5e3c;
-    margin-bottom:15px;
-}
-
-.receta p{
-    margin-bottom:10px;
-}
-
-button{
-    transition:.3s;
-}
-
-button:hover{
-    transform:scale(1.05);
-}
-img {
-    width: 100%;
-    max-width: 600px;
-    display: block;
-    margin: 20px auto;
-    border-radius: 12px;
-}
-
-ul, ol {
-    margin-left: 25px;
-    line-height: 1.8;
 }
