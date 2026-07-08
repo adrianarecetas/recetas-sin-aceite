@@ -113,3 +113,32 @@ nav{
 }
 
 }
+.receta{
+    background:#fffaf6;
+    border:2px solid #efd9c8;
+    border-radius:18px;
+    padding:25px;
+    transition:0.3s;
+}
+
+.receta:hover{
+    transform:translateY(-6px);
+    box-shadow:0 15px 35px rgba(0,0,0,.12);
+}
+
+.receta h3{
+    color:#8b5e3c;
+    margin-bottom:15px;
+}
+
+.receta p{
+    margin-bottom:10px;
+}
+
+button{
+    transition:.3s;
+}
+
+button:hover{
+    transform:scale(1.05);
+}
